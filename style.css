@@ -45,3 +45,20 @@
 .icon-cls{
     width: 20px;
 }
+
+.banner-title{
+font-weight: 700;
+font-size: 38px;
+color: #071B55;
+}
+
+.banner-description{
+color: #071B55;
+margin: 10px 0px;
+font-weight: 400;
+font-size: 17px;
+}
+
+/* .banner-img{
+width: 500px;
+} */
