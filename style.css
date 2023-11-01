@@ -3,6 +3,50 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.logo{
+    width: 100px;
+    height: 42px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: #071B55;
+    border-radius: 10px;
+}
+
+.bar:nth-child(3){
+    width: 20px;
+    margin-right:0px ;
+}
+
+/* .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+} */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: .5s ease;
+}
+
 .dot {
     height: 10px;
     width: 10px;
@@ -52,6 +96,14 @@
     width: 20px;
 }
 
+#banner{
+    margin-top: 84px;
+}
+
+#poster{
+    margin-bottom: 107px;
+}
+
 .banner-title{
 font-weight: 700;
 font-size: 38px;
@@ -82,12 +134,16 @@ border-radius: 30px;
 .service-title{
 color: #071B55;
 font-size: 24px;
-font-weight: 700;
+font-weight: 500;
 }
 .service-description{
 color: #071B55;
 font-size: 15px;
 font-weight: 500;
+}
+.service-img{
+    width: 100%;
+    height: 100%;
 }
 
 .contant-container{
@@ -129,12 +185,95 @@ footer{
 .footer-link{
     color:#667085;
      margin-right: 16px;
+     text-decoration: none;
+}
+
+.testimonial-text{
+    display: none;
+    animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+      opacity: 0;
+    }
+    10%, 90% {
+      opacity: 1;
+    }
+  }
+
+.phone-links{
+    position: fixed;
+padding: 20px 0;
+left: 0;
+top: -100%;
+flex-direction: column;
+gap: 30px;
+background-color: #ffffff;
+width: 100%;
+text-align: center;
+transition: .4s;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
+
+.comment{
+    font-weight: 500;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
+    .hamburger {
+       display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        background: red;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        width: 30px;
+        background: red;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .phone-links-active{
+        top: 70px;
+
+    }
+
+    #banner{
+        margin-top: 112px;
+        overflow: hidden;
+    }
+    .banner-description{
+        margin-top: 26px;
+    }
+    /* .poster-description{
+        font-size: 22px;
+        padding: 85px 39px;
+    } */
+
+    .banner-img{
+        width: 447px;
+        height: 318px;
+    }
+
     .poster-content{
-        padding: 10px 50px;
+        font-size: 22px;
+        padding: 0px 20px;
         color: #ffffff;
+    }
+    .logo{
+        width: 83.33px;
+        height: 35px;
+    }
+    #poster{
+        margin-bottom: 96px;
     }
 /* 
     .testimonial-container{
@@ -143,14 +282,19 @@ footer{
        align-items: center;
        justify-content: center;
         } */
-
-        .abstract-img{
-            height: 35px;
+        .service-img{
+            height: 200px;
         }
 
+
         .footer-title{
-            font-weight: 700;
+            font-weight: 600;
         font-size: 20px;
         color: #071B55;
+        line-height: 30px;
+        }
+
+        .comment{
+            font-size: 20px;
         }
 }
