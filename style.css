@@ -73,6 +73,26 @@ border-radius: 30px;
     color: #ffffff;
 }
 
+.service-title{
+color: #071B55;
+font-size: 24px;
+font-weight: 700;
+}
+.service-description{
+color: #071B55;
+font-size: 15px;
+font-weight: 500;
+}
+
+.contant-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
     .poster-content{
         padding: 5px 50px;
