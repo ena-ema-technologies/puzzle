@@ -62,3 +62,20 @@ font-size: 17px;
 /* .banner-img{
 width: 500px;
 } */
+
+.poster-container{
+background-color: #23B1D9;
+border-radius: 30px;
+}
+
+.poster-content{
+    padding: 5px 200px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .poster-content{
+        padding: 5px 50px;
+        color: #ffffff;
+    }
+}
