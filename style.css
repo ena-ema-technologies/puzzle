@@ -108,6 +108,29 @@ font-weight: 500;
     color: #ffffff;
 
 }
+
+.divider{
+    width: 100%;
+    margin: 30px;
+    border-top: 1px solid #DCDDDF;
+}
+
+.footer-title{
+    font-weight: 700;
+font-size: 25px;
+color: #071B55;
+}
+
+footer{
+    background: #EBEDEE;
+    padding: 40px 0px 10px;
+}
+
+.footer-link{
+    color:#667085;
+     margin-right: 16px;
+}
+
 @media screen and (max-width: 768px) {
     .poster-content{
         padding: 10px 50px;
@@ -123,5 +146,11 @@ font-weight: 500;
 
         .abstract-img{
             height: 35px;
+        }
+
+        .footer-title{
+            font-weight: 700;
+        font-size: 20px;
+        color: #071B55;
         }
 }
