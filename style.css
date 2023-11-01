@@ -93,6 +93,15 @@ font-weight: 500;
     justify-content: center;
 }
 
+
+.testimonial-container{
+    background-color: #071B55;
+    border-radius: 30px;
+    }
+.fa-quote-left{
+    color: #ffffff;
+    
+}
 @media screen and (max-width: 768px) {
     .poster-content{
         padding: 5px 50px;
