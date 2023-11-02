@@ -62,7 +62,7 @@
 .nav-defult{
     color: #071B55;
     font-weight: 500;
-    opacity: 50% ;
+    opacity: 70% ;
 }
 
 .contact-link{
@@ -131,6 +131,9 @@ border-radius: 30px;
     color: #ffffff;
 }
 
+.poster-description{
+    font-size: 26px;
+}
 .service-title{
 color: #071B55;
 font-size: 24px;
@@ -144,6 +147,8 @@ font-weight: 500;
 .service-img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
 }
 
 .contant-container{
@@ -172,8 +177,8 @@ font-weight: 500;
 }
 
 .footer-title{
-    font-weight: 700;
-font-size: 25px;
+font-weight: 500;
+font-size: 24px;
 color: #071B55;
 }
 
@@ -188,7 +193,7 @@ footer{
      text-decoration: none;
 }
 
-.testimonial-text{
+.testimonial, .testimonial-title{
     display: none;
     animation: fade 5s linear infinite;
 }
@@ -203,7 +208,7 @@ footer{
   }
 
 .phone-links{
-    position: fixed;
+position: fixed;
 padding: 20px 0;
 left: 0;
 top: -100%;
@@ -212,7 +217,7 @@ gap: 30px;
 background-color: #ffffff;
 width: 100%;
 text-align: center;
-transition: .4s;
+transition: .8s;
 }
 .banner-img{
     width: 100%;
@@ -224,7 +229,36 @@ transition: .4s;
     font-size: 25px;
 }
 
-@media screen and (max-width: 768px) {
+
+
+.testimonial, .testimonial-title {
+    display: none;
+  }
+  
+  .dot-container {
+    margin-top: 10px;
+  }
+  
+  .navigation-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff7e;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active-dot {
+    background-color: #ffffff;
+  }
+  
+  .active-testimonial {
+    display: block;
+  }
+
+
+@media screen and (max-width: 991px) {
     .hamburger {
        display: block;
     }
@@ -232,12 +266,12 @@ transition: .4s;
         opacity: 0;
     }
     .hamburger.active .bar:nth-child(1){
-        background: red;
+        background: #071B55;
         transform: translateY(8px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3){
         width: 30px;
-        background: red;
+        background: #071B55;
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -253,14 +287,14 @@ transition: .4s;
     .banner-description{
         margin-top: 26px;
     }
-    /* .poster-description{
+    .poster-description{
         font-size: 22px;
-        padding: 85px 39px;
-    } */
+        padding: 25px 1px;
+    } 
 
     .banner-img{
-        width: 447px;
-        height: 318px;
+        width: 114%;
+        height: auto;
     }
 
     .poster-content{
@@ -283,12 +317,12 @@ transition: .4s;
        justify-content: center;
         } */
         .service-img{
-            height: 200px;
+            min-height: 200px;
         }
 
 
         .footer-title{
-            font-weight: 600;
+        font-weight: 500;
         font-size: 20px;
         color: #071B55;
         line-height: 30px;
